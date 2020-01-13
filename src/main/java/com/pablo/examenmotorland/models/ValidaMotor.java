@@ -32,9 +32,9 @@ public class ValidaMotor implements Validator{
         ValidationUtils.rejectIfEmptyOrWhitespace(errors, "fabricante",
         "required.fabricante", "El campo Fabricante es Obligatorio.");
 
-        if (motor.getModelo().length()==5)
+        if (motor.getModelo().length()!=5)
         {
-            errors.rejectValue("modelo", "verificamodelo","El modelo debe contener cinco caracteres como minimo.");
+            errors.rejectValue("modelo", "verificamodelo","El modelo debe contener cinco caracteres");
         }
         
         if(motor.getPotencia()<=0)

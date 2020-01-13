@@ -15,6 +15,7 @@ public class Motores {
     private double potencia;
     private double peso;
     private int cantidad;
+    private String optimo;
 
     public Motores() {
         this.modelo="";

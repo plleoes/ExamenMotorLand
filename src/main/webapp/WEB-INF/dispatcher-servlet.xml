@@ -20,6 +20,8 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="altamotor.htm">altaMotorController</prop>
+                
             </props>
         </property>
     </bean>
@@ -32,10 +34,12 @@
     <!--
     The index controller.
     -->
-    <bean name="indexController"
-          class="org.springframework.web.servlet.mvc.ParameterizableViewController"
-          p:viewName="index" />
-    
     <bean name="altaMotorController" class="com.pablo.examenmotorland.controllers.AltaMotorController" />
+
+    
+    <bean name="indexController"
+          class="com.pablo.examenmotorland.controllers.ListadoMotorController" />
+    
+    
 
 </beans>
